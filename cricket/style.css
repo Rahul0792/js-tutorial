@@ -1,0 +1,15 @@
+.Container{
+  background-color: antiquewhite;
+  height: 200px;
+  width: 500px;
+  align-content: centre;
+  position: absolute;
+  left: 35%;
+  top: 10%;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+body{
+  text-align: center;
+
+}

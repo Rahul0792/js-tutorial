@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <DIV class="Container">
+        <h1> Bat Ball Stump Game </h1>
+    <button onclick="
+        let computerChoice = choiceofcomputer();
+        let resultMsg = getReasult( 'Bat', computerChoice) ;
+        showReasult( 'Bat' , computerChoice ,resultMsg);
+    ">Bat</button>
+    
+
+    <button onclick="
+        computerChoice = choiceofcomputer();
+         resultMsg = getReasult( 'Ball', computerChoice) ;
+        showReasult( 'Ball' , computerChoice ,resultMsg);
+    ">Ball</button>
+
+    <button onclick="
+        computerChoice = choiceofcomputer();
+         resultMsg = getReasult( 'Stump', computerChoice) ;
+        showReasult( 'Stump' , computerChoice ,resultMsg);
+    ">Stump</button>
+
+    <button onclick="
+    localStorage.clear();
+    resetScore();
+
+    ">Reset</button>
+    </DIV>
+
+<script src="design.js"></script>
+
+</body>
+
+</html>   
